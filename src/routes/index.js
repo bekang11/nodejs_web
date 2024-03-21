@@ -1,9 +1,17 @@
-const page1Router = require('./page1');
+const pageUpdateRouter = require('./pageupdate');
+const pageAddRouter = require('./pageadd');
+const pageDeleteRouter = require('./pagedelete');
 const siteRouter = require('./site');
 
 function route(app) {
-    app.use('/page1', page1Router);
+    app.use('/pageupdate', pageUpdateRouter);
+
+    app.use('/pagedelete', pageDeleteRouter);
+
+    app.use('/pageadd', pageAddRouter);
 
     app.use('/', siteRouter);
+
+
 }
 module.exports = route;
