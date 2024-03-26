@@ -6,8 +6,8 @@ export const myDataSource = new DataSource({
     port: 5432,
     username: "postgres",
     password: "123456",
-    database: "demodb",
+    database: "restapi",
     entities: ["src/entity/user.entity.ts"],
     logging: true,
-    synchronize: false,
+    synchronize: true,
 })

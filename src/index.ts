@@ -1,13 +1,13 @@
 import  express from "express";
 import { createConnection } from "typeorm";
-import authRoutes from "./authRoutes.ts";
+// import authRoutes from "./authRoutes.ts";
 
 
 const app = express();
 app.use(express.json());
 
-app.use("/auth", authRoutes);
-
+// app.use("/auth", authRoutes);
+   
 const port = process.env.port || 3000;
 
 
